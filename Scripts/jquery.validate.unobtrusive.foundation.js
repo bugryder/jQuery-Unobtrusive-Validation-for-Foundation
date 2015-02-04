@@ -4,9 +4,9 @@
 
     $.validator.setDefaults({
         highlight: function (element, errorClass, validClass) {
-            $(element).removeClass(validClass).addClass("error").addCalss(errorClass);
-            $(element.form).find("label[for=" + element.id + "]").removeClass(validClass).addClass("error").addCalss(errorClass);
-            $(element.form).find("span[data-valmsg-for=" + element.id + "]").removeClass(validClass).addClass("error").addCalss(errorClass);
+            $(element).removeClass(validClass).addClass("error").addClass(errorClass);
+            $(element.form).find("label[for=" + element.id + "]").removeClass(validClass).addClass("error").addClass(errorClass);
+            $(element.form).find("span[data-valmsg-for=" + element.id + "]").removeClass(validClass).addClass("error").addClass(errorClass);
         },
         unhighlight: function (element, errorClass, validClass) {
             $(element).removeClass("error").removeClass(errorClass).addClass(validClass);
