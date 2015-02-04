@@ -11,7 +11,7 @@
         unhighlight: function (element, errorClass, validClass) {
             $(element).removeClass("error").removeClass(errorClass).addClass(validClass);
             $(element.form).find("label[for=" + element.id + "]").removeClass("error").removeClass(errorClass).addClass(validClass);
-            $(element.form).find("span[data-valmsg-for=" + element.id + "]").removeClass("error").removeClass(errorClass).addClass(valiClass);
+            $(element.form).find("span[data-valmsg-for=" + element.id + "]").removeClass("error").removeClass(errorClass).addClass(validClass);
         }
     });
 
